@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>jspPro</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!--서블릿 등록..  -->
+  <servlet>
+     <description> 첫번째  서블릿  예제 </description>
+     <description> 날짜와 시간정보 응답</description>
+     <servlet-name>now</servlet-name>
+     <servlet-class>days02.Now</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>now</servlet-name>
+<!--      <url-pattern>*.htm</url-pattern> -->
+     <!-- 앞으로 url pattern 호출되면 now가 나감 -->
+
+<!-- /는 context path 다음부터를 의미 -->
+     <url-pattern>/days02/now.do</url-pattern>  <!-- jspPro/days02/now.do 면 호출 -->
+     <url-pattern>/test/*</url-pattern> <!-- jspPro/test/* 면 호출 -->
+     
+     
+  </servlet-mapping>
+  
+</web-app>

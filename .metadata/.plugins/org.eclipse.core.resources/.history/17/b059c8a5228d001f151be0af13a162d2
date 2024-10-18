@@ -1,0 +1,7 @@
+package days04.board.persistence;
+
+public interface BoardDAO {
+	
+	ArrayList<BoardDTO> select () throws SQLException;
+
+}

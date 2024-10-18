@@ -1,0 +1,75 @@
+package days02;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+// 서블릿 규약을 따르는 서블릿 클래스 선언
+public class Now extends HttpServlet{
+
+   @Override
+   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+      super.doGet(request, response);
+   }
+
+   @Override
+   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+      super.doPost(request, response);
+   }
+
+   @Override
+   protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	   
+	   PrintWriter out = response.getWriter();
+	   
+	   // out.write();
+	 
+	   out.writer("<!DOCTYPE html>                                                                              ")
+	   out.writer("<html>                                                                                       ")
+	   out.writer("  <head>                                                                                     ")
+	   out.writer("    <meta charset="UTF-8" />                                                                 ")
+	   out.writer("    <title>Insert title here</title>                                                         ")
+	   out.writer("    <link                                                                                    ")
+	   out.writer("      rel="shortcut icon"                                                                    ")
+	   out.writer("      type="image/x-icon"                                                                    ")
+	   out.writer("      href="http://localhost/jspPro/images/SiSt.ico"                                         ")
+	   out.writer("    />                                                                                       ")
+	   out.writer("    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> ")
+	   out.writer("    <meta name="viewport" content="width=device-width, initial-scale=1.0" />                 ")
+	   out.writer("    <link                                                                                    ")
+	   out.writer("      rel="stylesheet"                                                                       ")
+	   out.writer("      href="http://localhost/jspPro/resources/cdn-main/example.css"                          ")
+	   out.writer("    />                                                                                       ")
+	   out.writer("    <script src="http://localhost/jspPro/resources/cdn-main/example.js"></script>            ")
+	   out.writer("    <style>                                                                                  ")
+	   out.writer("      span.material-symbols-outlined {                                                       ")
+	   out.writer("        vertical-align: text-bottom;                                                         ")
+	   out.writer("      }                                                                                      ")
+	   out.writer("    </style>                                                                                 ")
+	   out.writer("  </head>                                                                                    ")
+	   out.writer("  <body>                                                                                     ")
+	   out.writer("    <header>                                                                                 ")
+	   out.writer("      <h1 class="main">                                                                      ")
+	   out.writer("        <a href="#" style="position: absolute; top: 30px">jyoons HOme</a>                    ")
+	   out.writer("      </h1>                                                                                  ")
+	   out.writer("      <ul>                                                                                   ")
+	   out.writer("        <li><a href="#">로그인</a></li>                                                      ")
+	   out.writer("        <li><a href="#">회원가입</a></li>                                                    ")
+	   out.writer("      </ul>                                                                                  ")
+	   out.writer("    </header>                                                                                ")
+	   out.writer("    <div>                                                                                    ")
+	   out.writer("      <xmp class="code">                                                                     ")
+	   out.writer("                                                                                             ")
+	   out.writer("  	  </xmp>                                                                                ")
+	   out.writer("    </div>                                                                                   ")
+	   out.writer("                                                                                             ")
+	   out.writer("  </body>                                                                                    ")
+	   out.writer("</html>                                                                                      ")
+
+   }
+
+}
